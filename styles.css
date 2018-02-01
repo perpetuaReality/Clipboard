@@ -83,6 +83,24 @@
         text-decoration: none;
     }
 
+    #emoji_set a:hover {
+        text-decoration: solid;
+    }
+
+#toggleIndex {
+    border: 2px solid grey;
+    background-color: lightgray;
+    width: 100%;
+    padding-bottom: 3px; padding-top: 3px;
+    font-size: large;
+    cursor: pointer;
+}
+
+    #toggleIndex:hover {
+        background-color: #e6e6e6;
+        border: 2px solid lightgrey;
+    }
+
 .gTree_group {
     list-style: none;
     margin-left: 15px;
@@ -103,6 +121,8 @@
     text-align: center;
     border: 2px solid #636363;
     background-color: #e6e6e6;
+
+    overflow-y: hidden;
 }
 
 .group_title {
@@ -116,6 +136,17 @@
     line-height: 40px;
 }
 
+    .group_title button {
+        font-size: x-large;
+        background-color: transparent;
+        border: none;
+    }
+
+        .group_title button:hover {
+            color: blue;
+            cursor: pointer;
+        }
+
 .subgroup_panel {
     margin: 5px;
     padding: 0px;
@@ -124,7 +155,21 @@
     border: 2px solid #636363;
     background-color: white;
     text-align: center;
+
+    overflow-y: hidden;
 }
+
+    .subgroup_panel button {
+        font-size: xx-large;
+        width: 60px;
+        background-color: transparent;
+        border: none;
+    }
+
+        .subgroup_panel button:hover {
+            background-color: aquamarine;
+            cursor: pointer;
+        }
 
 .subgroup_title {
     width: 100%;
@@ -137,17 +182,18 @@
     line-height: 30px;
 }
 
-.subgroup_panel button {
-    font-size: xx-large;
-    width: 60px;
-    background-color: transparent;
-    border: none;
-}
+    .subgroup_title button {
+        font-size: medium;
+        background-color: transparent;
+        width: auto;
+        border: none;
+    }
 
-.subgroup_panel button:hover {
-    background-color: aquamarine;
-    cursor: pointer;
-}
+        .subgroup_title button:hover {
+            background-color: transparent;
+            color: blue;
+            cursor: pointer;
+        }
 
 #emoji_tooltip {
     position: fixed;
